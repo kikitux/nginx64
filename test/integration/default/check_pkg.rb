@@ -3,5 +3,6 @@ describe package('nginx') do
 end
 
 describe service('nginx') do
+  it {should be_enabed}
   it {should be_running}
 end
